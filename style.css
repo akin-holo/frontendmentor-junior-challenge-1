@@ -55,6 +55,12 @@ main {
    width: 92%;
 }
 
+.profile-and-share-props-wrapper {
+   display: flex; 
+   justify-content: space-between; 
+   align-items: center;
+   margin-right: 20px;
+}
 .profile-wrap {
    display: flex;
    align-items: center;
@@ -100,3 +106,127 @@ button.share-icon {
    margin: 0 10px;
    font-size: 15px;
 }
+
+         /* Mobile View Breakpoints */
+   @media screen and (max-width: 800px) {
+      .container {
+         flex-direction: column;
+         gap: 10px;
+      }
+
+      main {
+         align-self: center;
+         margin: auto;
+      }
+
+      .drawers-img {
+         display: block;
+         width: 100%;
+         height: auto;
+         border-top-left-radius: 5px;
+         border-top-right-radius: 5px;
+         border-bottom-left-radius: unset;
+      }
+
+      .para1 {
+         width: 90%;
+         margin: 1.5rem;
+      }
+      .para2 {
+         width: 82%;
+         margin: 0 1.5rem 0 1.5rem;
+         font-size: 17px;
+      }
+
+      .profile-and-share-props-wrapper {
+         position: relative;
+      }
+      .profile-wrap {
+         margin: 1.5rem;
+      }
+
+      button.share-icon {
+         margin-right: 10px ;
+         z-index: 10;
+      } 
+
+      .share-option {
+         position: absolute;
+         /* display: flex; */
+         top: 30px;
+         left: 0;
+         right: 0;
+         width: 105%;
+         height: 100px;
+         justify-content: center;
+         align-items: center;
+         padding: 0;
+         border-radius: 0 0 10px 10px;
+      }
+      .share-option span.share,
+      .share-option a {
+         align-self: center;
+         font-size: 22px;
+      }
+      
+    }
+
+
+   @media screen and (max-width: 359px) {
+      main {
+         height: 100%;
+         margin: auto;
+      }
+      /* .container {
+         flex-direction: column;
+         padding-bottom: 10px;
+         gap: 10px;
+      } */
+      /* .drawers-img {
+         display: block;
+         width: 100%;
+         height: auto;
+         border-top-left-radius: 5px;
+         border-top-right-radius: 5px;
+         border-bottom-left-radius: unset;
+      } */
+      .text-and-profile-wrapper {
+         margin: auto;
+      }
+      .para1 {
+         width: 95%;
+         margin: 0.5rem;
+      }
+      .para2 {
+         width: 90%;
+         margin: 0.5rem;
+         font-size: 16px;
+      }
+
+      .profile-wrap {
+         margin: 0.5rem;
+      }
+
+      /* button.share-icon {
+         margin-right: 10px ;
+         z-index: 10;
+      }  */
+      .share-option {
+         position: absolute;
+         /* display: flex; */
+         top: 15px;
+         left: 0;
+         right: 0;
+         width: 107%;
+         height: 70px;
+         justify-content: center;
+         align-items: center;
+         padding: 0;
+         border-radius: 0 0 10px 10px;
+      }
+      /* .share-option span.share,
+      .share-option a {
+         align-self: center;
+         font-size: 22px; 
+      } */
+   }
