@@ -23,33 +23,51 @@
     <meta name="twitter:image" content="URL to an image related to your page">
     <meta name="twitter:url" content="URL of your page">
 
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
    <main>
-      <div class="container" id="container">
+      <article class="container" id="container">
          <div class="img-wrap">
-            <img class="drawers" src="assets/drawers.jpg" alt="A deep green drawers with a flower jog on it">
+            <img class="drawers-img" src="assets/drawers.jpg" alt="A deep green drawers with a flower jog on it">
          </div>
          
          <div class="text-and-profile-wrapper">
             <div class="text-wrap">
-               <p><strong>Shift the overall look and feel by adding these wonderful touches to furniture in your home</strong></p>
-               <p>Ever been in a room and felt like something was missing? Perharps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete</p>
+               <p class="para1"><strong>Shift the overall look and feel by adding these wonderful touches to furniture in your home</strong></p>
+               <p class="para2">Ever been in a room and felt like something was missing? Perharps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete</p>
             </div>
-            <div class="profile-wrap">
-               <img class="avatar-michelle" src="assets/avatar-michelle.jpg" alt="Michelle">
-               <div class="name-and-date-wrap">
-                  <span class="name">Michelle Appleton</span>
-                  <time datetime="2020-06-28">28 Jun 2020</time>
+
+            <div>
+               <div class="profile-wrap">
+                  <img class="avatar-michelle" src="assets/avatar-michelle.jpg" alt="Michelle">
+                  <div class="name-and-date-wrap">
+                     <span class="name">Michelle Appleton</span>
+                     <time datetime="2020-06-28">28 Jun 2020</time>
+                  </div>
+               <div>
+   
+               <div class="share-props">
+                  <button class="share-icon" id="shareIcon" aria-label="share">
+                     <i class="fa-solid fa-share"></i>
+                  </button>
+                  <div class="share-option" id="shareOption">
+                     <span class="share">SHARE</span>
+                     <a href="https://www.facebook.com/" aria-label="share to facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                     <a href="https://x.com/" aria-label="share to twitter"><i class="fa-brands fa-twitter"></i></a>
+                     <a href="https://www.pinterest.com/" aria-label="share to pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                  </div>
                </div>
-               <a href="#"></a>
             </div>
          </div>
-      </div>
+      </article>
    </main>
+
+   <script src="script.js"></script>
 </body>
 </html>
