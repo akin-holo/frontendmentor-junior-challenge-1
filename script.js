@@ -5,8 +5,8 @@ let click = 1;
 
 shareButton.onclick = function() {
    if(click == 1) {
-      shareButton.style.cssText = ("color: white; background-color: var(--dark-blue)")
-      shareOption.style.display = "block";
+      shareButton.style.cssText = ("color: white; background-color: var(--dark-blue);")
+      shareOption.style.display = "flex";
       click = 0;
    } else {
       shareButton.style.cssText = ("color: initial; background-color: var(--light-grayish-blue)")
